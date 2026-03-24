@@ -1,0 +1,7 @@
+streamlit
+streamlit-mic-recorder
+langgraph
+langchain-openai
+langchain-community
+python-dotenv
+pandas
