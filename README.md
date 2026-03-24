@@ -2,6 +2,9 @@
 
 This project is a real-time AI dashboard designed for call center agents. It uses a **Multi-Agent Orchestration** architecture to triage customer queries and provide specialized guidance.
 
+
+http://ec2-18-223-116-71.us-east-2.compute.amazonaws.com:8501/
+
 ---
 # 🤖 Agent Roster
 
