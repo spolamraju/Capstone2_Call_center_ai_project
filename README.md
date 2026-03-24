@@ -26,4 +26,18 @@ This document defines the specialized agents used in the transcript processing p
 ## Architecture Diagram
 <img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/58f5423e-3175-440f-9d86-c8ea58c49ec3" />
 
+## 🏗️ AI Call Supervisor: Professional Component Stack
+
+| Layer | Component | Role & Functionality | Provider / Source |
+| :--- | :--- | :--- | :--- |
+| **Infrastructure** | AWS EC2 (RHEL 9) | Host OS providing compute, security groups, and networking. | [Amazon Web Services](https://aws.amazon.com) |
+| **Web Server / UI** | Streamlit | Turns Python scripts into an interactive dashboard with tabs and metrics. | [Streamlit](https://streamlit.io) |
+| **Audio Processing** | FFmpeg | System library to process and encode audio bytes for API transmission. | RHEL Repository |
+| **Transcription** | OpenAI Whisper-1 | The "Ears"; converts raw audio into high-accuracy text. | [OpenAI API](https://openai.com) |
+| **Orchestration** | LangGraph | The "Logic Flow"; manages state and sequence between AI agents. | [LangChain](https://www.langchain.com) |
+| **Intelligence (LLM)** | GPT-4o-mini | The "Brain"; handles sentiment, KPI extraction, and summarization. | [OpenAI API](https://openai.com) |
+| **Agent Logic** | Custom Python Agents | Three specialized functions: Sentiment, Metrics, and Summarizer. | Custom Code |
+| **Usage Tracking** | LangChain Callbacks | Intercepts metadata to calculate real-time token counts and costs. | LangChain Community |
+| **Frontend Audio** | Mic Recorder | React component bridging the browser mic to the Streamlit backend. | [streamlit-mic-recorder](https://github.com) |
+| **Data Structure** | Pandas | Organizes agent outputs into structured tables and logs. | Open Source |
 
