@@ -1,11 +1,8 @@
 # 🎧 Multi-Agent Call Center AI Tool (Amazon 2023/EC2 )
 
-This project is a real-time AI dashboard designed for call center agents. It uses a **Multi-Agent Orchestration** architecture to triage customer queries and provide specialized guidance.
+This project is a real-time AI dashboard designed for call center agents. It uses a **Multi-Agent Orchestration** architecture to triage customer queries 
 
-
-http://ec2-18-223-116-71.us-east-2.compute.amazonaws.com:8501/
-
----
+demo - http://ec2-13-59-23-48.us-east-2.compute.amazonaws.com:8501/
 # 🤖 Agent Roster
 
 This document defines the specialized agents used in the transcript processing pipeline.
